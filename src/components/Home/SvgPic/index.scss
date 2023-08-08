@@ -1,0 +1,22 @@
+.logo-container {
+  z-index: 0;
+  width: 550px;
+  height: 409px;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  bottom: auto;
+  left: auto;
+  margin: 50px auto 0;
+  opacity: 0;
+  animation: fadeIn 2s 2s;
+  animation-fill-mode:both;
+
+  svg {
+    width: 100%;
+    height: auto;
+    bottom:0;
+    transform:rotateZ(20deg) !important;
+
+  }
+  }
