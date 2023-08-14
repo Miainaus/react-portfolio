@@ -1,4 +1,15 @@
 .home-page {
+  display: flex;
+  width: 100%;
+  will-change: contents;
+  height: 100vh;
+  min-height: 566px;
+  margin: 0 auto;
+  z-index: 1;
+  transform-style: preserve-3d;
+  animation: fadeIn 1s forwards;
+  animation-delay: 1s;
+
   .text-zone {
     position: absolute;
     left: 10%;

@@ -1,10 +1,10 @@
 import './index.scss'
 import { useState,useEffect } from 'react'
 import LogoTitle from '../../assets/images/logo-m.png'
-import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
 import SvgPic from './SvgPic'
 import Loader from 'react-loaders'
+import {Link} from 'react-scroll'
 
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animated')
@@ -30,8 +30,8 @@ const Home = () => {
   } , []);
   
   return (
-    <>
-    <div className="container home-page">
+    <section id='home'>
+    <div className="home-page">
       <div className="text-zone">
         <h1>
           <span className={letterClass}>H</span>
@@ -53,14 +53,16 @@ const Home = () => {
           />
         </h1>
         <h2>Frontend Developer / JavaScript Lover</h2>
-        <Link to="/contact" className="flat-button">
+          <Link to="/contact" className="flat-button" onClick={() => {
+            document.getElementById("contact").scrollIntoView({behavior:'smooth'});
+        }}>
           Contact Me
         </Link>
       </div>
       <SvgPic />
       </div>
       <Loader type='pacman' />
-      </>
+      </section>
   )
 }
 

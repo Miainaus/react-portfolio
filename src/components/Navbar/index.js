@@ -1,50 +1,63 @@
 import './index.scss'
-import { Link, NavLink } from 'react-router-dom'
+import { Link} from 'react-scroll'
 import LogoM from '../../assets/images/logo-m.png'
-import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHome, faUser, faEnvelope ,faBarsProgress} from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons'
-const Sidebar = () => {
+const Navbar = () => {
   return (
     <div className="nav-bar">
       <Link className="logo">
         <img src={LogoM} alt="logo" />
-        <img className="sub-logo" src={LogoSubtitle} alt="logo_sub" />
+        
       </Link>
       <nav>
-        <NavLink
-          exact="true"
-          activeClassName="active"
+        <Link
+          activeClass="active"
           className="home-link"
-          to="/"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
         >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          exact="true"
-          activeClassName="active"
+        </Link>
+        <Link
+        
+          activeClass="active"
           className="about-link"
-          to="/about"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
         >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          exact="true"
-          activeClassName="active"
+        </Link>
+        <Link
+          activeClass="active"
           className="projects-link"
-          to="/projects"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
         >
           <FontAwesomeIcon icon={faBarsProgress} color="#4d4d4e" />
-        </NavLink>
-        <NavLink
-          exact="true"
-          activeClassName="active"
+        </Link>
+        <Link
+     
+          activeClass="active"
           className="contact-link"
-          to="/contact"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={-100}
+          duration={500}
         >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
-        </NavLink>
+        </Link>
       </nav>
       <ul>
         <li>
@@ -71,4 +84,4 @@ const Sidebar = () => {
   )
 }
 
-export default Sidebar
+export default Navbar

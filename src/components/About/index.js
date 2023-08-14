@@ -3,7 +3,7 @@ import AnimatedLetters from '../AnimatedLetters'
 import { useState,useEffect } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faReact,faJs,faNode ,faHtml5,faCss3, faGitAlt} from '@fortawesome/free-brands-svg-icons'
-import Loader from 'react-loaders'
+
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animated');
@@ -11,8 +11,8 @@ const About = () => {
     setTimeout(() => setLetterClass('text-animated-hover'), 4000)
   } , []);
   return (
-    <>
-    <div className="container about-page">
+    <section id='about'>
+    <div className="about-page">
       <div className="text-zone">
         <h1>
           <AnimatedLetters
@@ -35,23 +35,7 @@ const About = () => {
           fermentum non, fermentum posuere nisl. In hac habitasse platea
           dictumst. Maecenas ullamcorper malesuada luctus.
         </p>
-        <p>
-          Cras gravida lectus et metus auctor suscipit. Praesent lacinia orci at
-          sapien pretium, non accumsan urna scelerisque. Fusce at odio neque.
-          Donec laoreet dictum sollicitudin. Aliquam erat volutpat. Proin
-          hendrerit, justo et feugiat vestibulum, turpis turpis gravida ante,
-          mollis pretium arcu lectus vitae lacus. Pellentesque viverra sagittis
-          vehicula. Vestibulum vel commodo dui. Morbi viverra ante nec lorem
-          sollicitudin ultrices. Nunc tristique risus placerat, pretium ipsum
-          sed, auctor nunc. Nam egestas nisi ipsum, at interdum orci finibus
-          non. In accumsan turpis at diam semper, vitae aliquet erat tempus.
-          Morbi tincidunt sapien ac euismod tempor.
-        </p>
-        <p>
-          Cras quis ipsum porta, tristique dolor quis, laoreet ante. Lorem ipsum
-          dolor sit amet, consectetur adipiscing elit. Aliquam fermentum tempor
-          tortor
-        </p>
+       
       </div>
       <div className='stage-cube-cont'>
         <div className='cubespinner'>
@@ -76,8 +60,7 @@ const About = () => {
         </div>
       </div>
     </div>
-      <Loader type='pacman' />
-      </>
+      </section>
   )
 }
 
