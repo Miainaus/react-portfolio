@@ -1,5 +1,6 @@
 import AnimatedLetters from '../AnimatedLetters'
 import { useState, useEffect } from 'react'
+import imgPort from '../../assets/images/portfolio.png'
 import img from '../../assets/images/logo1.png'
 import './index.scss'
 
@@ -24,15 +25,9 @@ const Projects = () => {
         </div>
         <div className="demo">
           <div className="card">
-            <a className="image" href="#1">
-              <img src={img} alt='' />
-              <h2>title</h2>
-            </a>
-          </div>
-          <div className="card">
-            <a className="image" href="#1">
-              <img src={img}  alt='' className="mainImg" />
-              <h2>title</h2>
+            <a className="image" href="https://miainaus.github.io/react-portfolio/">
+              <img src={imgPort} alt='portfolio' />
+              <h2>Portfolio</h2>
             </a>
           </div>
           <div className="card">
