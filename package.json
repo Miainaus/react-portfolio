@@ -30,7 +30,11 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
+<<<<<<< HEAD
     "predeploy" : "npm run build",
+=======
+      "predeploy" : "npm run build",
+>>>>>>> origin/main
     "deploy" : "gh-pages -d build"
   },
   "eslintConfig": {
