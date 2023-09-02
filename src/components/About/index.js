@@ -22,18 +22,9 @@ const About = () => {
           />
         </h1>
         <p>
-          Suspendisse nec justo massa. Morbi neque lacus, accumsan id ex ac,
-          mattis tincidunt felis. Proin at lectus ac libero molestie auctor.
-          Vestibulum et fringilla lacus. Donec interdum vestibulum euismod.
-          Donec est sapien, pellentesque eu neque ut, sagittis imperdiet erat.
-          Suspendisse cursus mauris vestibulum lacus interdum aliquet. Donec a
-          turpis vehicula, finibus velit a, convallis enim. Maecenas pretium est
-          sed nulla fermentum, nec facilisis nibh pellentesque. In fermentum
-          interdum turpis quis tincidunt. Integer lacus neque, ultrices euismod
-          erat vel, pharetra sodales massa. Donec ac scelerisque turpis. Sed
-          quis congue sem, sed varius tellus. Aliquam sapien mi, vehicula sed
-          fermentum non, fermentum posuere nisl. In hac habitasse platea
-          dictumst. Maecenas ullamcorper malesuada luctus.
+        Hello there! I'm a self-taught developer driven by an unquenchable passion for coding. Coding isn't just a skill for me, it's a way of life.
+I wake up each day with a burning desire to dive into lines of code and create something remarkable.
+If you're seeking a developer who's passionate, innovative, and ready to contribute meaningfully to your projects, look no further. Let's collaborate and make some digital magic happen!
         </p>
        
       </div>
